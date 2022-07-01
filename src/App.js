@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 
 
-
+import image from './image.jpg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import FlightTable from './FlightTable';
@@ -57,6 +57,12 @@ function App() {
 
   return (
     <div className="App">
+      <div>
+        <main className="span" >
+          <img src={image} alt="" />
+          <h1>Find and Compare cheap <span>Flights</span></h1>
+        </main>
+      </div>
       {/* <h1>flights is loading</h1> */}
       <>
         <SearchBar setFlyfrom={setFlyfrom} setFlyto={setFlyto} setDatefrom={setDatefrom} setDateto={setDateto} directFlights={directFlights} setDirectflights={setDirectflights} setLimit={setLimit} fetchData={fetchData} />
