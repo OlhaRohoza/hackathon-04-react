@@ -5,7 +5,7 @@ import './Card.css';
 function FlightTable({ flights }) {
   return (
     <div>
-     
+
       <table>
         <thead>
           <tr>
@@ -16,6 +16,7 @@ function FlightTable({ flights }) {
             <th>Destination</th>
             <th>Date and Time of Departure</th>
             <th>Date and Time of Arrival to Destination </th>
+            <th>Stopovers </th>
             <th>Routes </th>
             <th>Total Duration </th>
           </tr>
@@ -23,21 +24,22 @@ function FlightTable({ flights }) {
         <tbody>
           {flights && (flights.map((flight, i) => (
             <tr key={i}>
-              <td>{flight.price} </td>
+              <td>{flight.price} EUR </td>
               <td>{flight.cityFrom} </td>
               <td>{flight.flyFrom} </td>
               <td>{flight.cityTo} </td>
               <td>{flight.flyTo} </td>
-              <td>{DateTime.fromMillis(flight.dTime * 1000).toFormat('hh:mm')} </td>
-              <td>{DateTime.fromMillis(flight.aTime * 1000).toFormat('hh:mm')}</td>
+              <td>{DateTime.fromMillis(flight.dTime * 1000).toFormat('dd LLL yyyy')} {DateTime.fromMillis(flight.dTime * 1000).toFormat('hh:mm')}</td>
+              <td>{DateTime.fromMillis(flight.aTime * 1000).toFormat('dd LLL yyyy')} {DateTime.fromMillis(flight.aTime * 1000).toFormat('hh:mm')}</td>
+              <td>{flight.route.length - 1} </td>
               <td>
-              {flight.route.map((route,i) =>(
-                <p key={i}>Fly  from {route.cityFrom} to {route.cityTo} </p>
-              ))}
+                {flight.route.map((route, i) => (
+                  <p key={i}>{route.cityFrom} to {route.cityTo} </p>
+                ))}
               </td>
-              <td> {DateTime.fromMillis(flight.duration.total * 1000).toFormat('hh:mm')}hr</td>
+              <td> {flight.fly_duration}</td>
             </tr>
-            
+
 
 
           )))}
