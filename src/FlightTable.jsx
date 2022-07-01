@@ -19,6 +19,7 @@ function FlightTable({ flights }) {
             <th>Stopovers </th>
             <th>Routes </th>
             <th>Total Duration </th>
+            
           </tr>
         </thead>
         <tbody>
