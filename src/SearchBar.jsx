@@ -4,6 +4,8 @@ export function SearchBar({ setFlyfrom, setFlyto, setDatefrom, setDateto, direct
     // DateTime.fromISO()
 
     return (
+
+
         <div className="search--bar">
             <div className="search--part-one">
                 <div className="parts">
@@ -61,9 +63,8 @@ export function SearchBar({ setFlyfrom, setFlyto, setDatefrom, setDateto, direct
                 </div>
             </div>
             <br />
-
-
-
         </div>
+
+
     )
 }
