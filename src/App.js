@@ -35,6 +35,7 @@ function App() {
     <div className="App">
       <h1>flights is loading</h1>
       
+      
      
         <FlightTable  flights ={flights} /> 
         

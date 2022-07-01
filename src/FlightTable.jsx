@@ -1,11 +1,14 @@
 import React from 'react'
+
 import { DateTime } from 'luxon';
  import './Card.css';
 function FlightTable({flights}) {
   return (
     <div>
+     
       <table>
-      <thead>
+      <thead className="main">
+        
         <th>Price</th>
         <th>Name of origin</th>
         <th>Code of the origin</th>
