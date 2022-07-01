@@ -1,14 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
-     
+
 
 body {
-    background: #fb887c;
-    color: #fff;
+    background: #add8e6;
+    color: #000058;
     font-family: 'Lato', Arial, sans-serif;
 }
 
 h1 {
-    font-family: "proxima-nova",sans-serif;
+    font-family: "proxima-nova", sans-serif;
     letter-spacing: -0.01em;
     font-weight: 700;
     font-style: normal;
@@ -26,12 +26,15 @@ table {
     margin: auto;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #fff;
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
 }
 .main{
