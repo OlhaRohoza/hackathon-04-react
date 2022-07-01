@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.search--bar {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em;
+    border: 2px solid silver;
+    border-radius: 3px;
+
+}
+
+.search--part-one,
+.search--part-two,
+.search--part-three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parts {
+    display: flex;
+    justify-content: left;
+    padding-right: 1em;
+    width: 35%;
+}
+
+.parts p {
+    padding-right: 1em;
+
+}
+
+.search--part-four {
+    display: flex;
+    justify-content: flex-end;
+}
