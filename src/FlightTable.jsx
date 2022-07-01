@@ -1,9 +1,11 @@
 import React from 'react'
+
 import { DateTime } from 'luxon';
 import './Card.css';
 function FlightTable({ flights }) {
   return (
     <div>
+     
       <table>
         <thead>
           <tr>
