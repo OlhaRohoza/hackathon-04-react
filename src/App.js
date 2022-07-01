@@ -31,17 +31,20 @@ function App() {
       const data = await response.json();
       console.log(data)
       return setFlights(data.data);
+      
     } catch (err) {
       console.log(err);
     }
+    
   }
-
+  
   console.log(flyFrom);
   console.log(flyTo);
   console.log(dateFrom);
   console.log(dateTo);
   console.log(limit);
   console.log(directFlights);
+
 
   // useEffect(() => {
   //   fetchData();

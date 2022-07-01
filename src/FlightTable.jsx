@@ -16,6 +16,8 @@ function FlightTable({ flights }) {
             <th>Destination</th>
             <th>Date and Time of Departure</th>
             <th>Date and Time of Arrival to Destination </th>
+            <th>Routes </th>
+            <th>Total Duration </th>
           </tr>
         </thead>
         <tbody>
@@ -28,7 +30,14 @@ function FlightTable({ flights }) {
               <td>{flight.flyTo} </td>
               <td>{DateTime.fromMillis(flight.dTime * 1000).toFormat('hh:mm')} </td>
               <td>{DateTime.fromMillis(flight.aTime * 1000).toFormat('hh:mm')}</td>
+              <td>
+              {flight.route.map((route,i) =>(
+                <p key={i}>Fly  from {route.cityFrom} to {route.cityTo} </p>
+              ))}
+              </td>
+              <td> {DateTime.fromMillis(flight.duration.total * 1000).toFormat('hh:mm')}hr</td>
             </tr>
+            
 
 
           )))}
