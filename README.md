@@ -10,6 +10,6 @@
 ![](https://img.shields.io/badge/Frameworks-React.js-yellow)
 
 - source: https://www.youtube.com/watch?v=MNs_7avLIJ4 
-- small shop with 3 items
-- add an Item to the cart, remove an Item from the cart, adjust quality in the cart
+- a small shop with 3 items
+- Redux: add an Item to the cart, remove an Item from the cart, adjust quality in the cart, display an items
 
